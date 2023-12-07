@@ -1,0 +1,20 @@
+/* Unique Table Styles */
+.planComparisonTable {
+  margin-bottom: 0;
+  background-color: white;
+}
+
+/* Unique Loading Wrapper Styles */
+.planComparisonLoading {
+  width: 100%;
+  position: relative;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Unique Attribute Table Cell Styles */
+.planAttributeCell {
+  background-color: #f4f4f8;
+}

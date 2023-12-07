@@ -1,0 +1,144 @@
+/* Unique Header Styles */
+.uniqueHeaderWrapper {
+  text-align: center;
+  margin-top: 0.8rem;
+  padding: 1rem;
+  background-color: #c7c7e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.headerTitle{
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 4rem;
+  background: linear-gradient(45deg, #1048a9, rgb(58, 126, 214)); /* Standard gradient */
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* WebKit-specific prefix */
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 8px rgba(167, 189, 194, 0.7);
+  animation: bounce 2s infinite;
+}
+.uniqueHeaderIcon {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.uniqueHeaderContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.uniqueHeaderText {
+  background-color: #333; /* Light background for a clean look */
+  border-left: 5px solid #2193b0; /* Accent border on the left */
+  padding: 15px 20px; /* Adequate padding for content */
+  margin-bottom: 20px; /* Spacing between each container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  transition: all 0.3s ease-in-out; /* Transition for hover effects */
+  font-size: 1.2rem; /* Font size */
+  line-height: 1.6; /* Line height for readability */
+  color: #333; /* Base font color */
+
+  /* Gradient text effect */
+  /* background-image: linear-gradient(to right, #1097a9, #78c0d2); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(47, 41, 41, 0.2); 
+}
+
+.uniqueHeaderText:hover {
+  transform: translateY(-3px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow on hover */
+  color: #2193b0; /* Change text color on hover */
+  -webkit-text-fill-color: initial; /* Override the gradient fill on hover for WebKit browsers */
+}
+
+
+/* Global Styles */
+.bodyStyle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eaecef;
+  color: #333;
+  line-height: 1.6;
+}
+
+.linkStyle {
+  color: #333;
+  text-decoration: none;
+}
+
+.linkHoverStyle {
+  text-decoration: underline;
+}
+
+.headerTitle {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; border-right: none; } /* Remove cursor at the end */
+}
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #2193b0; }
+}
+.leadText {
+  font-size: 1.2rem;
+  font-weight: 700; /* Make the font bold */
+  background: linear-gradient(to right, #1048a9, #78c0d2); /* Gradient color */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  overflow: hidden; /* Ensures the text is hidden until animated */
+  border-right: .15em solid rgb(150, 176, 33); /* Cursor-like border */
+  white-space: nowrap; /* Keeps the text in one line */
+  animation: typing 4s steps(40, end) forwards, blink-caret .75s step-end infinite;
+  font-size: calc(1.2rem + 0.5vw); /* Responsive font size */
+}
+.leadText:hover {
+  text-decoration: underline; /* Underlines text on hover */
+  text-decoration-color: #2193b0; /* Sets the underline color */
+  transition: text-decoration-color 0.3s ease-in-out; /* Smooth transition for the underline */
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #2193b0; }
+}
+
+/* Container Adjustments */
+.customContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.formInputArea {
+  background-color: #c7c7e1;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}

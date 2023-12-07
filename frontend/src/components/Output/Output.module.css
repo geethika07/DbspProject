@@ -1,0 +1,99 @@
+/* Explanation and Visualization Containers */
+.explanationWrapper, .visualizationWrapper {
+  background-color: #f4f4f8; /* Light background for contrast */
+  border: 1px solid #dee2e6; /* Subtle border for definition */
+  border-radius: 0.25rem; /* Rounded corners */
+  padding: 1rem; /* Padding for inner content */
+  margin-bottom: 1rem; /* Space between elements */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  flex-grow: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.flexRowEqualHeight {
+  display: flex;
+  flex-direction: column;
+}
+
+/* General Text and Content Styling */
+.formOutputText {
+  color: #495057; /* Dark gray for text for readability */
+  font-size: 1rem; /* Standard font size */
+  line-height: 1.5; /* Line height for better readability */
+}
+
+/* Header Styling */
+.outputHeader {
+  font-size: 1.5rem; /* Larger font size for headers */
+  color: #343a40; /* Darker color for emphasis */
+  margin-bottom: 1rem; /* Space below headers */
+  text-align: center; /* Center align headers */
+}
+
+/* Output Message Styling */
+.outputMessageWrapper {
+  background-color: #f4f4f8; /* Slightly darker background for focus */
+  border: 1px solid #ced4da; /* Border for definition */
+  border-radius: 0.25rem; /* Rounded corners */
+  padding: 1rem; /* Padding inside the message box */
+  margin-bottom: 1rem; /* Space below the message box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Toast Styling for Information Pop-up */
+.toastExplain {
+  background-color: #fff; /* White background for clarity */
+  color: #212529; /* Standard text color */
+  max-width: 80%; /* Max width of the toast */
+  height: auto; /* Auto height based on content */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  border-radius: 0.25rem; /* Rounded corners */
+  padding: 1rem; /* Padding inside the toast */
+  margin: 2rem auto; /* Centered with margin */
+}
+
+/* Button and Toggle Styling */
+.button, .toggle {
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* White text for contrast */
+  padding: 0.375rem 0.75rem; /* Padding for button size */
+  border-radius: 0.25rem; /* Rounded corners for buttons */
+  border: 1px solid transparent; /* Transparent border */
+  font-size: 1rem; /* Standard font size */
+}
+
+.button:hover, .toggle:hover {
+  background-color: #0069d9; /* Darker shade on hover */
+  color: #fff; /* Maintain white text on hover */
+}
+
+/* Layout and Spacing Adjustments */
+.formRow, .formGroup {
+  margin-bottom: 1rem; /* Consistent margin for layout */
+}
+
+/* Custom Scrollbar for Better Aesthetics in Overflow Scrolling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #adb5bd;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f8f9fa;
+}
+
+/* Adjustments for Responsive Design */
+@media (max-width: 768px) {
+  .explanationWrapper, .visualizationWrapper {
+    padding: 0.5rem; /* Smaller padding on smaller screens */
+  }
+  
+  .toastExplain {
+    max-width: 95%; /* Wider toast on smaller screens */
+  }
+}

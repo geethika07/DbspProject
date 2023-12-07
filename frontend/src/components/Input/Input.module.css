@@ -1,0 +1,196 @@
+.text {
+  text-align: justify;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.formLabel {
+  color: #527dc7;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.formText {
+  color: #555;
+}
+
+.toastWrapper {
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+}
+container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.toast {
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.toastError, .toastSuccess, .toastLoading {
+  color: white;
+}
+
+.toastError {
+  background-color: #d9534f; 
+}
+
+.toastSuccess {
+  background-color: #5cb85c; 
+}
+
+.toastLoading {
+  background-color: #0275d8; 
+}
+
+.toastLoadingWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.spinner {
+  margin-right: 0.5rem;
+}
+
+/* Form Styling */
+.formRow {
+  margin-top: 1rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formLabel {
+  font-weight: bold;
+}
+
+.formText {
+  margin-bottom: 0.5rem;
+}
+
+
+.accordion {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.card {
+  margin-bottom: 0.5rem;
+}
+
+.cardHeader {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+.custom {
+  min-width: 1000px !important;
+}
+
+.modal-dialog{
+  max-width: 1000px !important;
+}
+
+.cardBody {
+  background-color: #fff;
+}
+
+.textarea, .formControl{
+  resize: vertical;
+  height: 200px;
+  width:100%; 
+}
+
+.modal-header {
+  background-color: #f4f4f8;
+  color: #333;
+}
+
+.modal-body {
+  background-color: #fff;
+  padding:1rem;
+}
+
+.modal-footer {
+  background-color: #f4f4f8;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem; 
+}
+.formRow {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.outputModalDialog { 
+  min-width: 1000px !important; 
+  max-width: none !important;
+}
+
+
+.outputModalCloseBtn {
+  background-color: #333; 
+  color: white; 
+  padding: 0.5rem 1rem; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+.outputModalCloseBtn:hover {
+  background-color: #333; 
+}
+
+.button, .btn {
+  background-color: #527dc7; /* Primary button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover, .btn:hover {
+  background-color: #78c0d2; /* Lighter shade on hover */
+  transform: translateY(-2px);
+}
+
+.button:active, .btn:active {
+  transform: translateY(1px);
+}
+
+/* Specific styles for 'primary' and 'secondary' buttons */
+.btn-primary {
+  background-color: #333;
+  border-color: #333;
+}
+
+.btn-secondary {
+  background-color: #eaecef;
+  color: #333;
+  border: 1px solid #ddd;
+}
+.toastContainer {
+  position: fixed;
+  z-index: 1050; /* High z-index to keep it above other elements */
+  bottom: 20px; /* Position at the bottom of the screen */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for exact centering */
+  width: auto; /* Auto width based on content */
+}
+
+
+
